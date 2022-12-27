@@ -182,9 +182,12 @@ export default function Home() {
                 Earn swap fees and farm rewards by depositing tokens and
                 providing liquidity with the highest capital efficiency.
               </p>
-              <button className="bg-white  text-[#31349E] font-satoshi  mt-3 p-2 text-md font-medium">
-                Earn Now
-              </button>
+              <Link
+                href="https://t.me/swiftiechat"
+                className="bg-white  text-[#31349E] font-satoshi  mt-3 p-2 text-md font-medium"
+              >
+                Connect Wallet
+              </Link>
             </div>
           </section>
         </main>
@@ -315,7 +318,7 @@ export default function Home() {
             </section>
           </section>
           <section className="my-16 flex justify-center items-center">
-            <div className="max-h-[900px] xl:p-72 rounded-full lg:p-44 md:p-24 p-12  max-w-[900px] bg-white text-[#31349E] border border-black ">
+            <div className="max-h-[900px] xl:p-72 rounded-full lg:p-44 md:p-24 p-12  max-w-[900px] bg-white text-[#31349E] border  ">
               <div className=" font-satoshi text-center" id="tokenomics">
                 <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold font-nippo lg:mb-8 mb-4">
                   Tokenomics
@@ -337,7 +340,7 @@ export default function Home() {
           >
             <h1 className="mb-8 text-4xl font-bold  font-nippo">Roadmap</h1>
             <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-10">
-              <div className="border-2 py-8 px-4 shadow-xl border-black bg-white text-[#31349E]">
+              <div className=" py-8 px-4 shadow-xl  bg-white text-[#31349E]">
                 <h1 className="uppercase font-nippo text-3xl font-bold mb-2">
                   q4 2022
                 </h1>
@@ -351,7 +354,7 @@ export default function Home() {
                   <li>CERTIK AUDIT</li>
                 </ul>
               </div>
-              <div className="border-2 py-8 px-4 shadow-xl border-black bg-white text-[#31349E]">
+              <div className=" py-8 px-4 shadow-xl  bg-white text-[#31349E]">
                 <h1 className="uppercase font-nippo text-3xl font-bold mb-2">
                   q1 2023
                 </h1>
@@ -361,7 +364,7 @@ export default function Home() {
                   <li>VI APP</li>
                 </ul>
               </div>
-              <div className="border-2 py-8 px-4 shadow-xl border-black bg-white text-[#31349E]">
+              <div className=" py-8 px-4 shadow-xl  bg-white text-[#31349E]">
                 <h1 className="uppercase font-nippo text-3xl font-bold mb-2">
                   q2 2023
                 </h1>
@@ -373,8 +376,26 @@ export default function Home() {
               </div>
             </div>
           </section>
+          <section className="flex items-center invert w-fit mx-auto pb-12">
+            <Link href="https://twitter.com/swiftieexchange">
+              <Image
+                alt="Twitter"
+                src="/twitter-outline.svg"
+                height={50}
+                className="mr-2"
+                width={50}
+              />
+            </Link>
+            <Link href="https://t.me/swiftiechat">
+              <Image
+                alt="Telegram"
+                src="/telegram-outline.svg"
+                height={50}
+                width={50}
+              />
+            </Link>
+          </section>
         </main>
-        {/* </main> */}
       </div>
     </>
   );
