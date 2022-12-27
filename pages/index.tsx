@@ -131,7 +131,7 @@ export default function Home() {
                 Form.
               </h1>
               <h2 className="lg:text-3xl text-xl font-bold  mt-4 lg:max-w-xl">
-                The CeFi eperience made simpler on the DeFi ecosystem.
+                The CeFi experience made simpler on the DeFi ecosystem.
               </h2>
               <p className="lg:text-xl text-md my-4 max-w-lg font-medium">
                 Swiftie Exchange is an on-chain crypto trading and liquidity hub
