@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
       <div className="w-full   bg-fixed bg-[#31349E] py-2 lg:py-24">
         <main className="w-[95%] lg:w-9/12 mx-auto text-white ">
-          <nav className="fixed top-8">
+          <nav className="fixed top-8 flex justify-between lg:w-9/12 w-[95%] ">
             <Link href="/" className="flex items-center">
               <Image
                 src="/swifite.jpg"
@@ -31,7 +31,13 @@ export default function Home() {
                 width={30}
                 className="mr-2"
               />
-              <h1 className="text-xl font-medium font-nippo">Swifie Token</h1>
+              <h1 className="text-xl font-medium font-nippo">SwifTie Token</h1>
+            </Link>
+            <Link
+              href="https://t.me/swiftiechat"
+              className="border p-1 bg-white text-[#31349E] font-nippo "
+            >
+              Join On Telegram
             </Link>
           </nav>
           <section className="flex flex-wrap justify-between w-full ">
@@ -250,9 +256,9 @@ export default function Home() {
                 </h1>
                 <ul className="text-sm font-bold capitalize [&>li]:mb-2 mt-8">
                   <li> TOKEN CREATION</li>
-                  <li>FAIRLAUNCH ON PINKSALE</li>
+                  <li>PRESALE ON PINKSALE</li>
                   <li>TOKEN LISTING (TESTNET, BETA PHASE, MAINNET)</li>
-                  <li>OPEN POOL FARM & STAKING</li>
+                  <li>OPEN POOL FARM & STAKE</li>
                   <li>LISTING ON COINMARKETCAP  & COINGECKO</li>
                   <li>CERTIK AUDIT</li>
                 </ul>
