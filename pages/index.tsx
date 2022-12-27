@@ -4,6 +4,7 @@ import { Inter } from "@next/font/google";
 import { useLottie } from "lottie-react";
 import homeAnimation from "../openinglottie.json";
 import Link from "next/link";
+import { useRef } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -12,6 +13,19 @@ export default function Home() {
     loop: true,
   };
   const { View: home } = useLottie(options);
+  const mobileMenu = useRef<HTMLDivElement | null>(null);
+
+  const showMenu = () => {
+    if (mobileMenu.current) {
+      mobileMenu.current.classList.toggle("hidden");
+    }
+  };
+
+  const hideMenu = () => {
+    if (mobileMenu.current) {
+      mobileMenu.current.classList.toggle("hidden");
+    }
+  };
   return (
     <>
       <Head>
@@ -27,18 +41,88 @@ export default function Home() {
               <Image
                 src="/swifite.jpg"
                 alt="Swiftie Token"
-                height={30}
-                width={30}
+                height={40}
+                width={40}
                 className="mr-2"
               />
-              <h1 className="text-xl font-medium font-nippo">SwifTie Token</h1>
+              <h1 className="text-xl font-medium font-nippo">Swiftie </h1>
             </Link>
-            <Link
-              href="https://t.me/swiftiechat"
-              className="border p-1 bg-white text-[#31349E] font-nippo "
+            <div className=" hidden md:flex">
+              <Link
+                href="https://t.me/swiftiechat"
+                className="border p-1 bg-white flex items-center justify-center text-[#31349E] font-nippo mr-4"
+              >
+                Join On Telegram
+              </Link>
+              <Link
+                href="https://twitter.com/swiftieexchange"
+                className="border p-1 bg-white flex items-center justify-center text-[#31349E] font-nippo mr-4"
+              >
+                Join On Twitter
+              </Link>
+              <Link
+                href="https://t.me/swiftieann"
+                className="border p-1 bg-white flex items-center justify-center text-[#31349E] font-nippo "
+              >
+                Join Announcement Channel
+              </Link>
+            </div>
+            <button
+              className="font-nippo text-xl lg:hidden block"
+              onClick={showMenu}
             >
-              Join On Telegram
-            </Link>
+              MENU
+            </button>
+            <div
+              className="fixed inset-0 z-[99] bg-[#31349E] font-nippo hidden"
+              ref={mobileMenu}
+            >
+              <button
+                className="font-bold font-array text-3xl mt-20 mb-10 w-fit ml-4"
+                id="close"
+                onClick={hideMenu}
+              >
+                X
+              </button>
+              <div className="flex flex-col">
+                <Link
+                  href="#tokenomics"
+                  onClick={hideMenu}
+                  className="mr-4  text-2xl ml-4 transition-colors duration-300 link"
+                >
+                  Tokenomics
+                </Link>
+                <Link
+                  href="#roadmap"
+                  onClick={hideMenu}
+                  className="transition-colors ml-4  text-2xl duration-300 link"
+                >
+                  Q1 Roadmap
+                </Link>
+                <Link
+                  href="https://twitter.com/swiftieexchange"
+                  onClick={hideMenu}
+                  className="transition-colors  text-2xl ml-4 duration-300 link"
+                >
+                  Follow On Twitter
+                </Link>
+
+                <Link
+                  href="https://t.me/swiftiechat"
+                  onClick={hideMenu}
+                  className="transition-colors  text-2xl ml-4 duration-300 link"
+                >
+                  Join on Telegram
+                </Link>
+                <Link
+                  href="https://t.me/swiftieann"
+                  onClick={hideMenu}
+                  className="transition-colors  text-2xl ml-4 duration-300 link"
+                >
+                  Join Announcement Channel
+                </Link>
+              </div>
+            </div>
           </nav>
           <section className="flex flex-wrap justify-between w-full ">
             <div className="lg:w-5/12 w-full  font-satoshi mt-36">
@@ -232,7 +316,7 @@ export default function Home() {
           </section>
           <section className="my-16 flex justify-center items-center">
             <div className="max-h-[900px] xl:p-72 rounded-full lg:p-44 md:p-24 p-12  max-w-[900px] bg-white text-[#31349E] border border-black ">
-              <div className=" font-satoshi text-center">
+              <div className=" font-satoshi text-center" id="tokenomics">
                 <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold font-nippo lg:mb-8 mb-4">
                   Tokenomics
                 </h1>
@@ -247,7 +331,10 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="font-satoshi text-xl text-left my-32">
+          <section
+            className="font-satoshi text-xl text-left my-32"
+            id="roadmap"
+          >
             <h1 className="mb-8 text-4xl font-bold  font-nippo">Roadmap</h1>
             <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-10">
               <div className="border-2 py-8 px-4 shadow-xl border-black bg-white text-[#31349E]">
@@ -257,7 +344,8 @@ export default function Home() {
                 <ul className="text-sm font-bold capitalize [&>li]:mb-2 mt-8">
                   <li> TOKEN CREATION</li>
                   <li>PRESALE ON PINKSALE</li>
-                  <li>TOKEN LISTING (TESTNET, BETA PHASE, MAINNET)</li>
+                  <li>TOKEN LISTING </li>
+                  <li>DEX MAINNET LAUNCH</li>
                   <li>OPEN POOL FARM & STAKE</li>
                   <li>LISTING ON COINMARKETCAP  & COINGECKO</li>
                   <li>CERTIK AUDIT</li>

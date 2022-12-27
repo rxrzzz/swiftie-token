@@ -6,3 +6,7 @@
 body::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
+
+html{
+  scroll-behavior: smooth;
+}
