@@ -29,14 +29,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Swifite Token</title>
+        <title>Swiftie Token</title>
         <meta name="description" content="Launch website for Swiftie Token" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/swiftie.jpg" />
       </Head>
       <div className="w-full   bg-fixed bg-[#31349E] py-2 lg:py-24">
         <main className="w-[95%] lg:w-9/12 mx-auto text-white ">
-          <nav className="fixed top-8 flex justify-between lg:w-9/12 w-[95%] ">
+          <nav className="fixed top-8 flex  items-center justify-between lg:w-9/12 w-[95%] ">
             <Link href="/" className="flex items-center">
               <Image
                 src="/swifite.jpg"
@@ -47,7 +47,7 @@ export default function Home() {
               />
               <h1 className="text-xl font-medium font-nippo">Swiftie </h1>
             </Link>
-            <div className=" hidden md:flex">
+            {/* <div className=" hidden md:flex">
               <Link
                 href="https://t.me/swiftiechat"
                 className="border p-1 bg-white flex items-center justify-center text-[#31349E] font-nippo mr-4"
@@ -55,7 +55,7 @@ export default function Home() {
                 Join On Telegram
               </Link>
               <Link
-                href="https://twitter.com/swiftieexchange"
+                href="https://twitter.com/swiftie87209911"
                 className="border p-1 bg-white flex items-center justify-center text-[#31349E] font-nippo mr-4"
               >
                 Join On Twitter
@@ -66,13 +66,13 @@ export default function Home() {
               >
                 Join Announcement Channel
               </Link>
-            </div>
-            <button
-              className="font-nippo text-xl lg:hidden block"
-              onClick={showMenu}
+            </div> */}
+            <Link
+              href="/https://t.me/swiftiechat"
+              className="border p-1 bg-white flex items-center justify-center text-[#31349E] font-nippo"
             >
-              MENU
-            </button>
+              Connect Wallet
+            </Link>
             <div
               className="fixed inset-0 z-[99] bg-[#31349E] font-nippo hidden"
               ref={mobileMenu}
@@ -100,7 +100,7 @@ export default function Home() {
                   Q1 Roadmap
                 </Link>
                 <Link
-                  href="https://twitter.com/swiftieexchange"
+                  href="https://twitter.com/swiftie87209911"
                   onClick={hideMenu}
                   className="transition-colors  text-2xl ml-4 duration-300 link"
                 >
@@ -182,12 +182,12 @@ export default function Home() {
                 Earn swap fees and farm rewards by depositing tokens and
                 providing liquidity with the highest capital efficiency.
               </p>
-              <Link
+              {/* <Link
                 href="https://t.me/swiftiechat"
-                className="bg-white  text-[#31349E] font-satoshi  mt-3 p-2 text-md font-medium"
+                className="bg-white  text-[#31349E] font-satoshi  p-2 text-md font-medium"
               >
                 Connect Wallet
-              </Link>
+              </Link> */}
             </div>
           </section>
         </main>
@@ -377,7 +377,7 @@ export default function Home() {
             </div>
           </section>
           <section className="flex items-center invert w-fit mx-auto pb-12">
-            <Link href="https://twitter.com/swiftieexchange">
+            <Link href="https://twitter.com/swiftie87209911">
               <Image
                 alt="Twitter"
                 src="/twitter-outline.svg"
