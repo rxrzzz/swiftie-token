@@ -346,7 +346,7 @@ export default function Home() {
                 </h1>
                 <ul className="text-sm font-bold capitalize [&>li]:mb-2 mt-8">
                   <li> TOKEN CREATION</li>
-                  <li>PRESALE ON PINKSALE</li>
+                  <li>FAIRLAUNCH ON PRESALE</li>
                   <li>TOKEN LISTING </li>
                   <li>DEX MAINNET LAUNCH</li>
                   <li>OPEN POOL FARM & STAKE</li>
