@@ -55,7 +55,7 @@ export default function Home() {
                 Join On Telegram
               </Link>
               <Link
-                href="https://twitter.com/swiftie87209911"
+                href="https://twitter.com/swiftieex1"
                 className="border p-1 bg-white flex items-center justify-center text-[#31349E] font-nippo mr-4"
               >
                 Join On Twitter
@@ -100,7 +100,7 @@ export default function Home() {
                   Q1 Roadmap
                 </Link>
                 <Link
-                  href="https://twitter.com/swiftie87209911"
+                  href="https://twitter.com/swiftieex1"
                   onClick={hideMenu}
                   className="transition-colors  text-2xl ml-4 duration-300 link"
                 >
@@ -140,7 +140,7 @@ export default function Home() {
               </p>
               <Link
                 download
-                href="/white.pdf"
+                href="/whitepaper.pdf"
                 className="bg-white  text-[#31349E]  p-2 lg:text-xl text-md font-medium"
               >
                 Read Whitepaper
@@ -377,7 +377,7 @@ export default function Home() {
             </div>
           </section>
           <section className="flex items-center invert w-fit mx-auto pb-12">
-            <Link href="https://twitter.com/swiftie87209911">
+            <Link href="https://twitter.com/swiftieex1">
               <Image
                 alt="Twitter"
                 src="/twitter-outline.svg"
