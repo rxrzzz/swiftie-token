@@ -120,7 +120,7 @@ export default function Home() {
               </p>
               <Link
                 download
-                href="/whitepaper.pdf"
+                href="/white.pdf"
                 className="bg-white  text-[#31349E]  p-2 lg:text-xl text-md font-medium"
               >
                 Read Whitepaper
