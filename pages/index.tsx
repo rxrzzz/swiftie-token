@@ -47,26 +47,6 @@ export default function Home() {
               />
               <h1 className="text-xl font-medium font-nippo">Swiftie </h1>
             </Link>
-            {/* <div className=" hidden md:flex">
-              <Link
-                href="https://t.me/swiftiechat"
-                className="border p-1 bg-white flex items-center justify-center text-[#31349E] font-nippo mr-4"
-              >
-                Join On Telegram
-              </Link>
-              <Link
-                href="https://twitter.com/swiftieex1"
-                className="border p-1 bg-white flex items-center justify-center text-[#31349E] font-nippo mr-4"
-              >
-                Join On Twitter
-              </Link>
-              <Link
-                href="https://t.me/swiftieann"
-                className="border p-1 bg-white flex items-center justify-center text-[#31349E] font-nippo "
-              >
-                Join Announcement Channel
-              </Link>
-            </div> */}
             <Link
               href="/https://t.me/swiftiechat"
               className="border p-1 bg-white flex items-center justify-center text-[#31349E] font-nippo"
@@ -226,7 +206,7 @@ export default function Home() {
               </p>
               <p className="block mb-2 font-medium lg:text-xl text-md">
                 Swiftie Exchange primary goal is to have one million people gain
-                financial freedom.With a high APY of 25,000%, our staking pool
+                financial freedom.With a high APY of 10,000%, our staking pool
                 can generate an incredible 100x on your investments over a
                 period of 365days. By holding SWIFTIE, you can earn a reward for
                 every transaction done on the Swiftie ecosystem forever
@@ -277,7 +257,7 @@ export default function Home() {
                   their tokens in the Staking Pool. It is much simpler than
                   farming because, unlike the farms, you only need to stake one
                   token to start earning: usually SWIFTIE. The APY rate is
-                  currently at 25,000%, the rate drops as the staking pool
+                  currently at 10,000%, the rate drops as the staking pool
                   increases to create better stability of the token and to
                   reduce an oversupply of the SWIFTIE token. As we progress
                   different types of staking pools will be created to optimize
@@ -342,11 +322,11 @@ export default function Home() {
             <div className="grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-10">
               <div className=" py-8 px-4 shadow-xl  bg-white text-[#31349E]">
                 <h1 className="uppercase font-nippo text-3xl font-bold mb-2">
-                  q4 2022
+                  q1 2023
                 </h1>
                 <ul className="text-sm font-bold capitalize [&>li]:mb-2 mt-8">
                   <li> TOKEN CREATION</li>
-                  <li>FAIRLAUNCH ON PRESALE</li>
+                  <li>PRESALE ON PINKSALE</li>
                   <li>TOKEN LISTING </li>
                   <li>DEX MAINNET LAUNCH</li>
                   <li>OPEN POOL FARM & STAKE</li>
@@ -356,7 +336,7 @@ export default function Home() {
               </div>
               <div className=" py-8 px-4 shadow-xl  bg-white text-[#31349E]">
                 <h1 className="uppercase font-nippo text-3xl font-bold mb-2">
-                  q1 2023
+                  q2 2023
                 </h1>
                 <ul className="text-sm font-bold capitalize [&>li]:mb-2 mt-8">
                   <li> GLOBAL CAMPAIGN & MARKETING</li>
@@ -366,7 +346,7 @@ export default function Home() {
               </div>
               <div className=" py-8 px-4 shadow-xl  bg-white text-[#31349E]">
                 <h1 className="uppercase font-nippo text-3xl font-bold mb-2">
-                  q2 2023
+                  q3 2023
                 </h1>
                 <ul className="text-sm font-bold capitalize [&>li]:mb-2 mt-8">
                   <li>cROSS CHAIN SWAP</li>
