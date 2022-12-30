@@ -48,7 +48,7 @@ export default function Home() {
               <h1 className="text-xl font-medium font-nippo">Swiftie </h1>
             </Link>
             <Link
-              href="/https://t.me/swiftiechat"
+              href="/https://t.me/swiftieexch"
               className="border p-1 bg-white flex items-center justify-center text-[#31349E] font-nippo"
             >
               Connect Wallet
@@ -88,7 +88,7 @@ export default function Home() {
                 </Link>
 
                 <Link
-                  href="https://t.me/swiftiechat"
+                  href="https://t.me/swiftieexch"
                   onClick={hideMenu}
                   className="transition-colors  text-2xl ml-4 duration-300 link"
                 >
@@ -163,7 +163,7 @@ export default function Home() {
                 providing liquidity with the highest capital efficiency.
               </p>
               {/* <Link
-                href="https://t.me/swiftiechat"
+                href="https://t.me/swiftieexch"
                 className="bg-white  text-[#31349E] font-satoshi  p-2 text-md font-medium"
               >
                 Connect Wallet
@@ -366,7 +366,7 @@ export default function Home() {
                 width={50}
               />
             </Link>
-            <Link href="https://t.me/swiftiechat">
+            <Link href="https://t.me/swiftieexch">
               <Image
                 alt="Telegram"
                 src="/telegram-outline.svg"
